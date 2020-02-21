@@ -3,10 +3,11 @@
 	"name": "Bell-Ringer",
 	"description": "Regain control of your Chrome tab notifications",
 	"version": "0.1",
-	"background": {
-		"scripts": ["bell-ringer.js"]
-	},
-	"permissions": [
-		"https://streamlabs.com/"
+	"content_scripts": [
+		{
+			"matches": ["https://streamlabs.com/*"],
+			"css": ["bell-ringer.css"],
+			"js": ["bell-ringer.js"]
+		}
 	]
 }

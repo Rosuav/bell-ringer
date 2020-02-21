@@ -1,0 +1,4 @@
+/* Hide the red number on the notifications */
+.notification__indicator {
+	visibility: hidden;
+}
