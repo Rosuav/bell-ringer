@@ -1,2 +1,2 @@
-upload.zip: manifest.json bell-ringer.js bell-ringer.css
+upload.zip: manifest.json *.js *.css *.png
 	zip $@ $?
