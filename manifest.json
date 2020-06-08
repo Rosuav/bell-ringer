@@ -3,6 +3,7 @@
 	"name": "Bell-Ringer",
 	"description": "Regain control of your Chrome tab notifications",
 	"version": "0.1.2",
+	"icons": {"128": "icon128.png"},
 	"content_scripts": [
 		{
 			"matches": ["https://streamlabs.com/*"],
