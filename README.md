@@ -10,6 +10,9 @@ Note that the bell will still "shake", so if you deliberately choose to look at
 it, you can see that there are notifications waiting for you (but it's not
 distracting).
 
+Also tweaks the Twitch chat box "copy to clipboard" behaviour, making it more
+chat-like and less "hey let's show all those badges and stuff".
+
 "Mute" icon from Font Awesome via https://www.iconfinder.com/icons/1608871/bell_slash_icon
 
 To update:
