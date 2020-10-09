@@ -1,7 +1,8 @@
 //Intercept the copy action on Twitch pages to tidy up chat copy/paste
 document.oncopy = e => {
 	const range = window.getSelection().getRangeAt(0);
-	if (!range.commonAncestorContainer.closest(".chat-list")) return; //Keep default behaviour if not in chat list.
+	if (range.commonAncestorContainer.nodeType === 3) return; //Keep default behaviour if nothing but text selected (including if nothing is).
+	if (!range.commonAncestorContainer.closest(".chat-list,.chat-list--default")) return; //Keep default behaviour if not in chat list.
 	let start = range.startContainer, stop = range.endContainer;
 	let text = "";
 	let tipdepth = 0;
