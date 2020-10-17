@@ -12,6 +12,7 @@
 		},
 		{
 			"matches": ["https://*.twitch.tv/*"],
+			"css": ["twitchtweaks.css"],
 			"js": ["twitchtweaks.js"]
 		}
 	]
