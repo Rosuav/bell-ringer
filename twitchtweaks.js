@@ -1,4 +1,5 @@
 //Intercept the copy action on Twitch pages to tidy up chat copy/paste
+/*
 document.oncopy = e => {
 	const range = window.getSelection().getRangeAt(0);
 	if (range.commonAncestorContainer.nodeType === 3) return; //Keep default behaviour if nothing but text selected (including if nothing is).
@@ -36,3 +37,4 @@ document.oncopy = e => {
 	e.clipboardData.setData("text/plain", text);
 	e.preventDefault();
 }
+*/
