@@ -8,6 +8,7 @@ function fix() {
 
 	//Fix the tab icon
 	const icon = document.querySelector("link[rel=icon]");
+	if (!icon) return; //No notification icon found. As of 20220722 this whole patch may be unnecessary.
 	//console.log("Checking icon", icon.href);
 	if (icon.href.includes("notification"))
 		icon.href = default_image || "favicon.ico";
