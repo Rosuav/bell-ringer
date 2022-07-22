@@ -7,7 +7,6 @@
 //Standards violation: This unconditionally transforms line breaks into
 //spaces, without considering the surrounding text.
 function fold_whitespace(s, trailing_space) {
-	console.log({Fold: trailing_space}, s);
 	s = s.replace(/[\n\t]+/g, " ");
 	s = s.replace(/  +/g, " ");
 	if (trailing_space && s.startsWith(" ")) return s.slice(1);
