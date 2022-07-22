@@ -10,7 +10,9 @@ document.oncopy = e => {
 	function scanchildren(el) {
 		if (!stop) return; //Time to halt, up all the levels of recursion.
 		//Ignore all tooltips (but scan them for start/stop markers)
-		const istooltip = el.getAttribute && el.getAttribute("role") === "tooltip";
+		const istooltip =
+			el.getAttribute && el.getAttribute("role") === "tooltip" || //Anything with the ARIA role
+			el.classList && el.classList.contains("bttv-tooltip"); //but BTTV doesn't use the role.
 		if (istooltip) ++tipdepth;
 		let curtext = tipdepth > 0 ? "" :
 				el.nodeType === 1 && el.alt ? el.alt :
