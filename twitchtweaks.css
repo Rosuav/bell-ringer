@@ -1,5 +1,5 @@
 /* Hide the sidebar, mainly because it gets annoying when it flickers in and out */
 /* NOTE: As of 2020-10-17 this has not been pushed to production. Trialling it first. */
-#sideNav {
+#sideNav,.side-nav {
 	display: none;
 }
